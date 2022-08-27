@@ -12,7 +12,8 @@ Event Loop:     {Then comes the Event Loop, which keeps running continuously
 So how it works? Jadi bagaimana cara bekerjanya kita ambil contoh dari lesson 2 pada section 6
 Jadi, program akan berjalan sesuai dengan urutan baris. Namun ketika bertemu dengan
 code yang memiliki asynchronous maka akan di cek terlebih dahulu apakah program sudah selesai diproses
-jika sudah akan masuk ke event loop. Jika program di call stack sudah kosong akan masuk ke call stack dan program di eksekusi
+jika sudah akan masuk ke event loop. Jika program di call stack sudah kosong akan masuk ke call stack dan program  akan 
+dicallback untuk dieksekusi
 
 asynchronous cycle :
 Code processed -> Node API (menunggu di callback hingga proses selesai) -> Callback queue(menunggu call stack kosong)->lanjut:

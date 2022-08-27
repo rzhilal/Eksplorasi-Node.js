@@ -1,5 +1,6 @@
 const request = require('request')
 const weatherApp = require('../lesson9')
+const forecast = require('../lesson10')
 
 const url = 'http://api.weatherstack.com/current?access_key=8e56ba7f6c9a0b61482594f2bd59f90a&query=New%20York'
 
@@ -21,8 +22,28 @@ request({ url: url, json: true }, (error, response) => {
         response.body.current.precip + '% chance of rain.')
 })
 
+weatherApp((error, data) => {
+    if (error) {
+        return console.log(error)
+    }
+    forecast((error, data) => {
+        if (error) {
+            return console.log(error)
+        }
+        console.log(data.location)
+        console.log(forecast)
+    })
+})
+
 //callback abstraction
-weatherApp('Boston', (error, data) => {
+weatherApp((error, data) => {
     console.log('Error', error)
     console.log('Data', data)
 })
+
+forecast((error, data) => {
+    console.log('Error', error)
+    console.log('Data', data)
+})
+
+
