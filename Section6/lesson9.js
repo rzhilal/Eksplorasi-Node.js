@@ -18,4 +18,5 @@ const weatherApp = (address, callback) => {
         }
     })
 }
+
 module.exports = weatherApp
