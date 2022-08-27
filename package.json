@@ -1,0 +1,26 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "console.log('test')"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzhilal/Eksplorasi-Node.js.git"
+  },
+  "keywords": [
+    "Node-js"
+  ],
+  "author": "Rizq Hilal",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rzhilal/Eksplorasi-Node.js/issues"
+  },
+  "homepage": "https://github.com/rzhilal/Eksplorasi-Node.js#readme",
+  "dependencies": {
+    "request": "^2.88.0",
+    "validator": "^13.7.0"
+  }
+}

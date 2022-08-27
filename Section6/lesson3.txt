@@ -1,0 +1,19 @@
+Call stack :    {This is where all your javascript code gets pushed and executed 
+                 one by one as the interpreter reads your program, and gets 
+                popped out once the execution is done}
+Callback Queue:  {Ini tempat dimana kode asynchronous di push dan menunggu di 
+                  eksekusi}
+Event Loop:     {Then comes the Event Loop, which keeps running continuously 
+                 and checks the Main stack, if it has any frames to execute, 
+                 if not then it checks Callback queue, if Callback queue has 
+                 codes to execute then it pops the message from it to the 
+                 Main Stack for the execution.}
+
+So how it works? Jadi bagaimana cara bekerjanya kita ambil contoh dari lesson 2 pada section 6
+Jadi, program akan berjalan sesuai dengan urutan baris. Namun ketika bertemu dengan
+code yang memiliki asynchronous maka akan di cek terlebih dahulu apakah program sudah selesai diproses
+jika sudah akan masuk ke event loop. Jika program di call stack sudah kosong akan masuk ke call stack dan program di eksekusi
+
+asynchronous cycle :
+Code processed -> Node API (menunggu di callback hingga proses selesai) -> Callback queue(menunggu call stack kosong)->lanjut:
+lanjut : program di eksekusi di akhir program setelah main.
