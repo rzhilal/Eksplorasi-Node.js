@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/rzhilal/Eksplorasi-Node.js#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "request": "^2.88.0",
     "validator": "^13.7.0"
   }
