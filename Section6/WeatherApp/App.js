@@ -21,7 +21,7 @@ request({ url: url, json: true }, (error, response) => {
         response.body.current.temperature + ' degrees out. There is a ' +
         response.body.current.precip + '% chance of rain.')
 })
-
+ ////callback abstraction
 weatherApp((error, data) => {
     if (error) {
         return console.log(error)

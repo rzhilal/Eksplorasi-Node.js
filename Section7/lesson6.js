@@ -3,8 +3,6 @@ const path = require('path')
 
 const app = express()
 const publicDirPath = path.join(__dirname, './views')
-app.set('view engine', 'hbs')
-app.use(express.static(publicDirPath))
 
 app.get('', (req, res) => {
     res.render('index', {
