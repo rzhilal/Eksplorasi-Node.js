@@ -1,1 +1,0 @@
-console.log('Hello word in node js')

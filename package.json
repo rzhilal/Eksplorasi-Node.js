@@ -1,27 +1,27 @@
 {
-  "name": "notes-app",
+  "name": "week-2",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "console.log('test')"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/rzhilal/Eksplorasi-Node.js.git"
-  },
-  "keywords": [
-    "Node-js"
-  ],
-  "author": "Rizq Hilal",
+  "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/rzhilal/Eksplorasi-Node.js/issues"
-  },
-  "homepage": "https://github.com/rzhilal/Eksplorasi-Node.js#readme",
   "dependencies": {
-    "express": "^4.16.4",
-    "request": "^2.88.0",
-    "validator": "^13.7.0"
+    "@coreui/coreui": "^4.2.1",
+    "@coreui/vue": "^4.3.1",
+    "body-parser": "^1.20.0",
+    "bootstrap": "^5.2.0",
+    "connect-ensure-login": "^0.1.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "express-validator": "^6.14.2",
+    "hbs": "^4.2.0",
+    "mongoose": "^6.5.4",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^7.1.2",
+    "uuid": "^8.3.2"
   }
 }
