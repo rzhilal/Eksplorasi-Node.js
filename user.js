@@ -10,7 +10,7 @@ const Schema = mongoose.Schema;
 
 const User = new Schema({
   username: String,
-  password: String
+  password: String,
 });
 // Export Model
 User.plugin(passportLocalMongoose);

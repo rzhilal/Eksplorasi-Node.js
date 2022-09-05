@@ -8,6 +8,8 @@ const { v4: uuidv4 } = require('uuid'); // uuid generator
 const User = require('./user.js'); // User Model
 const passport = require('passport');  // authentication
 const connectEnsureLogin = require('connect-ensure-login');// authorization
+const UserDetails = require('./user');
+const user = require('./user.js');
 
 const publicDirPath = path.join(__dirname, '/')
 app.use(express.static(publicDirPath))
@@ -53,6 +55,16 @@ var loginValidate = [
 // Route to Login Page
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + '/login.html');
+});
+
+app.get('/register', (req, res) => {
+  res.sendFile(__dirname + '/register.html');
+});
+
+app.post('/register', (req, res) => {
+  console.log(req)
+  UserDetails.register({ username: req.body.email, active: false }, req.body.password);
+  res.redirect('/login');
 });
 
 app.post('/login', loginValidate, passport.authenticate('local', { failureRedirect: '/' }), (req, res) => {
